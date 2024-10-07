@@ -8,6 +8,7 @@ public class EjemploOperadores {
 		int numAlumnosCETI = 19;
 		int numAlumnosFPB = 19;
 		int numAlumnosSMR = 70;
+		float mediaAlumnos;
 		
 		
 		//Para sumar se usal el +
@@ -31,8 +32,18 @@ public class EjemploOperadores {
 		//Le resta uno a la variable
 		sumaAlumnos--;
 		
-		System.out.println("Los alumnos de informatica totales son: " + sumaAlumnos);
 		
+		//El operador ++ si se pone a la izquierda , tendra preferencia y sera lo 
+		//primero que se ejecute, si se pone a la derecha de la variable se ejcutara despues del resto
+		// de operadores o funciones.
+		
+		System.out.println("Los alumnos de informatica totales son: " + ++sumaAlumnos);
+		
+		//La media es la suam de todos los alumnos entre la cantidad de grados
+		
+		mediaAlumnos = sumaAlumnos/5 ;
+		
+		System.out.println(mediaAlumnos);
 		
 	}
 }
