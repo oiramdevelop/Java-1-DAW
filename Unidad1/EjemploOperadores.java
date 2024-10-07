@@ -25,6 +25,12 @@ public class EjemploOperadores {
 		//Este operador sirve para restar a la variable
 		sumaAlumnos = sumaAlumnos - 67;
 		
+		//Le suma uno a la variable
+		sumaAlumnos++;
+		
+		//Le resta uno a la variable
+		sumaAlumnos--;
+		
 		System.out.println("Los alumnos de informatica totales son: " + sumaAlumnos);
 		
 		
