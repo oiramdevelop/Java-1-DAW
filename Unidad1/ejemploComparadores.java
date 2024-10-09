@@ -36,7 +36,7 @@ public class ejemploComparadores {
 		
 		//Combinamos todoas las condiciones con el operador logico y (&&)
 		
-		boolean puedeEntrarGrad = edad>18 && numModSup>=8 && traebebida ==true && zapatillas !=true && 
+		boolean puedeEntrarGrad = edad>18 && numModSup>=8 && traeBebida ==true && zapatillas !=true;
 		
 	}
 
