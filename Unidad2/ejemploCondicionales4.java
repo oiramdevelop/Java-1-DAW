@@ -28,9 +28,12 @@ public class ejemploCondicionales4 {
 
 		System.out.println("Dime el operador (+ ,-,*,/, ^) ");
 		// Almacenamos en la variable operacion el caracter de la operacion que pide (+
-		// ,-,*,/, ^
+		// ,-,*,/,
 		operacion = teclado.next().charAt(0);
 
+		teclado.close();
+
+		// Realizamos la operacion del cliente
 		switch (operacion) {
 		case '+':
 			resultado = num1 + num2;
@@ -47,10 +50,19 @@ public class ejemploCondicionales4 {
 		case '^':
 			resultado = Math.pow(num1, num2);
 			break;
+		default:
+			System.out.println("EL operador no es valido");
 
+			// El return finaliza la funcion principal
+			// En este caso el main por lo cual es el porgrama principal
+			return;
 		}
 		// Sacamos por pantalla el resultado
 		System.out.println("El resultado es " + resultado);
+
+		// Vamos a generar una nota aleatoria y que saque por pantalla si es un
+		// insuficiente un suficiente...
+		int nota = (int) (Math.random() + 10 + 1);
 	}
 
 }
