@@ -31,8 +31,6 @@ public class ejemploCondicionales4 {
 		// ,-,*,/,
 		operacion = teclado.next().charAt(0);
 
-		teclado.close();
-
 		// Realizamos la operacion del cliente
 		switch (operacion) {
 		case '+':
@@ -55,7 +53,7 @@ public class ejemploCondicionales4 {
 
 			// El return finaliza la funcion principal
 			// En este caso el main por lo cual es el porgrama principal
-			return;
+
 		}
 		// Sacamos por pantalla el resultado
 		System.out.println("El resultado es " + resultado);
@@ -63,6 +61,27 @@ public class ejemploCondicionales4 {
 		// Vamos a generar una nota aleatoria y que saque por pantalla si es un
 		// insuficiente un suficiente...
 		int nota = (int) (Math.random() + 10 + 1);
-	}
 
+		Math.round(nota);
+
+		System.out.println("Con una " + nota + "tendras un ");
+		switch (nota) {
+		case 1:
+		case 2:
+		case 3:
+		case 4:
+			System.out.println("Insuficiente");
+			break;
+		case 5:
+		case 6:
+		case 7:
+		case 8:
+		case 9:
+		case 10:
+			System.out.println("Suficiente");
+			break;
+
+		}
+
+	}
 }
