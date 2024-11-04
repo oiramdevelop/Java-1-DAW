@@ -8,7 +8,7 @@ public class ejerciciosCondicionalesTareaUnidad2 {
 		int numero1 = 0;
 		int numero2 = 0;
 		int numero3 = 3;
-		String decir1 = " ";
+		char decir1 = ' ';
 
 		Scanner teclado = new Scanner(System.in);
 
@@ -32,19 +32,24 @@ public class ejerciciosCondicionalesTareaUnidad2 {
 
 		// Le preguntamos si quiere que le digamos que le digamos
 		// el numero menor de los 3
-		System.out.println("¿Quieres que te diga cual es el menor? (Si o No)");
-		decir1 = teclado.next();
+		System.out.println("¿Quieres que te diga cual es el menor? (S o N)");
+		decir1 = teclado.next().charAt(0);
 
 		teclado.close();
-
-		if (numero1 < numero2 && numero1 < numero3) {
-			System.out.println(numero1);
-		} else if (numero2 < numero1 && numero2 < numero3) {
-			System.out.println(numero2);
-		} else if (numero3 < numero1 && numero3 < numero2) {
-			System.out.println(numero3);
+		if (decir1 == 'S') {
+			if (numero1 < numero2 && numero1 < numero3) {
+				System.out.println(numero1);
+			} else if (numero2 < numero1 && numero2 < numero3) {
+				System.out.println(numero2);
+			} else if (numero3 < numero1 && numero3 < numero2) {
+				System.out.println(numero3);
+			} else {
+				System.out.println("Has puesto alguno igual picha ");
+			}
+		} else if (decir1 == 'N') {
+			System.out.println("De acuerdo que tengas un buen dia");
 		} else {
-			System.out.println("Has puesto alguno igual picha ");
+			System.out.println("Te he preguntado que si o no ");
 		}
 	}
 }
