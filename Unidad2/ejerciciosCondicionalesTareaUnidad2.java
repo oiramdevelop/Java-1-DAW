@@ -37,21 +37,14 @@ public class ejerciciosCondicionalesTareaUnidad2 {
 
 		teclado.close();
 
-		if (decir1 == "SI") {
-			if (numero1 < numero2 && numero1 < numero3) {
-				System.out.println(numero1);
-			} else if (numero2 < numero1 && numero2 < numero3) {
-				System.out.println(numero2);
-			} else if (numero3 < numero1 && numero3 < numero2) {
-				System.out.println(numero3);
-			} else {
-				System.out.println("Has puesto alguno igual picha ");
-			}
-		} else if (decir1 == "No") {
-			System.out.println("Adios picha");
+		if (numero1 < numero2 && numero1 < numero3) {
+			System.out.println(numero1);
+		} else if (numero2 < numero1 && numero2 < numero3) {
+			System.out.println(numero2);
+		} else if (numero3 < numero1 && numero3 < numero2) {
+			System.out.println(numero3);
 		} else {
-			System.out.println("Te he dicho que si o no caballero");
+			System.out.println("Has puesto alguno igual picha ");
 		}
 	}
-
 }
