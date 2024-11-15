@@ -2,7 +2,7 @@ package Unidad2;
 
 import java.util.Scanner;
 
-public class ejercicioCondicionalesNumerosMeses {
+public class NumerosMeses {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

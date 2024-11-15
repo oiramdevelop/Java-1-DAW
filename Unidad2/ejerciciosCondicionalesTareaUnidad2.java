@@ -8,6 +8,7 @@ public class ejerciciosCondicionalesTareaUnidad2 {
 		int numero1 = 0;
 		int numero2 = 0;
 		int numero3 = 3;
+		int numero4 = 0;
 		char decir1 = ' ';
 
 		Scanner teclado = new Scanner(System.in);
