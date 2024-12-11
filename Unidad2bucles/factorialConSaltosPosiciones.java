@@ -2,7 +2,7 @@ package Unidad2bucles;
 
 import java.util.Scanner;
 
-public class factorialConSaltosPosiciones {
+public class factorialSaltosPosiciones {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -14,26 +14,25 @@ public class factorialConSaltosPosiciones {
 		 * 2+4+6+8+10+12+14
 		 * 
 		 */
-		int num1 = 0;
-		int num2 = 0;
+		Scanner teclado = new Scanner(System.in);
+		int n = 0;
+		int d = 0;
 		int suma = 0;
 
-		Scanner teclado = new Scanner(System.in);
+		System.out.println("Dime el numero el cual quieres saber la suma");
+		n = teclado.nextInt();
 
-		// Leemos por teclado el primer numero y lo guardamos en la variable
-		System.out.println("Dime el priemr numero ");
-		num1 = teclado.nextInt();
-
-		// Leemos por teclado el segundo numero y lo guardamos en la variable
-		System.out.println("Dime el segundo numero");
-		num2 = teclado.nextInt();
+		System.out.println("Dime los saltos de posicion que quieres saber la suma");
+		d = teclado.nextInt();
 		teclado.close();
-
-		for (int i = num2; i <= num1; i += num2) {
+		for (int i = d; i <= n; i += d) {
 			suma += i;
+			System.out.print(i + " ");
 
 		}
-		System.out.println(suma);
+		System.out.println();
+		System.out.println("El resultado es " + suma);
+		;
 	}
 
 }
