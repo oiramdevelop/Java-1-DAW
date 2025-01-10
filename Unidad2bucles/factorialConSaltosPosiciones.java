@@ -2,7 +2,7 @@ package Unidad2bucles;
 
 import java.util.Scanner;
 
-public class factorialSaltosPosiciones {
+public class factorialConSaltosPosiciones {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
