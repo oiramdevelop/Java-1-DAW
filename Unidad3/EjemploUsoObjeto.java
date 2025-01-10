@@ -21,6 +21,8 @@ public class EjemploUsoObjeto {
 
 		arcoGelido.nombre = "FrozenLettherarrowgo";
 
+		Arma lanzaPicas = new Arma("lanza Picas", "multiples picas a la vez", 0, 20, 0, 3);
+
 		// Creamos un personaje con new y el nombre de la clase
 		Personajes aragorn = new Personajes();
 		// Para acceder a las variables mienbre de la clase se utiliza el .

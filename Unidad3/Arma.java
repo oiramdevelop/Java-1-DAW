@@ -22,7 +22,7 @@ public class Arma {
 
 	private int ataqueFisico = 0;
 	private int ataqueMagico = 0;
-	private int peso = 0;
+	private double peso = 0;
 	private int clasePermitida[];
 
 	/********************************************
@@ -33,6 +33,31 @@ public class Arma {
 		System.out.println("se ha creado un Arma");
 		this.peso = (int) (Math.random() * 5);
 		this.ataqueFisico = (int) ((Math.random() * 18) + 2);
+		this.efecto = (int) (Math.random() * 5);
+		this.descripcion = "Arma por defecto , no hace pupa";
+
+	}
+
+	/**
+	 * Constructor que recibe todo los datos del objeto y los asigna a las variables
+	 * miembro
+	 * 
+	 * @param nombre
+	 * @param descripcion
+	 * @param efecto
+	 * @param ataqueFisico
+	 * @param ataqueMagico
+	 * @param peso
+	 */
+
+	public Arma(String nombre, String descripcion, int efecto, int ataqueFisico, int ataqueMagico, double peso) {
+		super();
+		this.nombre = nombre;
+		this.descripcion = descripcion;
+		this.efecto = efecto;
+		this.ataqueFisico = ataqueFisico;
+		this.ataqueMagico = ataqueMagico;
+		this.peso = peso;
 
 	}
 
