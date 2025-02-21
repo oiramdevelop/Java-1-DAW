@@ -5,6 +5,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import unidad4.model.EmpleadoDAO;
+import unidad4.model.EmpleadoDO;
 import unidad4.utils.UtilsBD;
 
 public class PruebasBD {
@@ -39,6 +40,10 @@ public class PruebasBD {
 
 		System.out.println("Resultado de borrar el 16 " + EmpleadoDAO.deleteEmpleado(con, 16));
 
+		EmpleadoDO juanito = new EmpleadoDO(-1, "juanito", "El de los palitos", 12, 3400, 1);
+
+		System.out.println("Al insertar a juanito devolvio: " + EmpleadoDAO.insertEmpleado(con, juanito));
+
 		try {
 			// Hay que ejecutar siempre el next
 			rs.next();
@@ -49,10 +54,14 @@ public class PruebasBD {
 			System.out.println(
 					rs.getInt(1) + "  " + rs.getString(2) + "  " + rs.getString(3) + " " + rs.getDouble("sueldo"));
 
+			// Cerramos la conexion
+			con.close();
+
 		} catch (SQLException e) {
 			e.printStackTrace();
 
 		}
+
 	}
 
 }
