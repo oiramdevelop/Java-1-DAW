@@ -1,5 +1,11 @@
 package unidad4.practica;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
 public class SithDAO {
 	 public static int eliminar(int id, Connection con) {
 	        String sql = "DELETE FROM Sith WHERE id = ?";

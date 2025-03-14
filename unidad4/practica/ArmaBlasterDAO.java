@@ -22,8 +22,8 @@ public class ArmaBlasterDAO {
 	public static int insertar(ArmaBlasterDO elementoDO, Connection con) {
 		String sql = "INSERT INTO ArmaBlaster (modelo, potencia) VALUES (?, ?)";
 		try (PreparedStatement pstmt = con.prepareStatement(sql)) {
-			pstmt.setString(1, elementoDO.getModelo());
-			pstmt.setInt(2, elementoDO.getPotencia());
+			pstmt.setString(1, elementoDO.getNombre());
+			pstmt.setInt(2, elementoDO.getPuntosRecarga());
 			return pstmt.executeUpdate() > 0 ? 0 : -1;
 		} catch (SQLException e) {
 			e.printStackTrace();
