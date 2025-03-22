@@ -9,7 +9,7 @@ public class UtilsBD {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/starwars", "root", "daw");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/starwars", "root", "daw2024");
 
 			return con;
 		} catch (Exception e) {

@@ -8,16 +8,26 @@ public class ArmaBlasterDO {
 	private String nombre;
 	private int puntosRecarga;
 	private int danio;
+	private String tipo;
 
 	/****************************
 	 * CONSTRUCTORES
 	 ****************************/
-	public ArmaBlasterDO(int id, String nombre, int puntosRecarga, int danio) {
+	/**
+	 * 
+	 * @param id
+	 * @param nombre
+	 * @param puntosRecarga
+	 * @param danio (daño)
+	 * @param tipo
+	 */
+	public ArmaBlasterDO(int id, String nombre, int puntosRecarga, int danio , String tipo) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.puntosRecarga = puntosRecarga;
 		this.danio = danio;
+		this.tipo = tipo;
 	}
 
 	public ArmaBlasterDO() {
@@ -60,6 +70,15 @@ public class ArmaBlasterDO {
 		this.danio = danio;
 	}
 
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
+	
+
 	/****************************
 	 * TO STRING
 	 ****************************/
@@ -68,5 +87,7 @@ public class ArmaBlasterDO {
 		return "ArmaBlasterDO [id=" + id + ", nombre=" + nombre + ", puntosRecarga=" + puntosRecarga + ", danio="
 				+ danio + "]";
 	}
+
+
 
 }
